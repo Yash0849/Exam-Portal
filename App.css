@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+  background-color:#22035b; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.category-selection {
+  margin-bottom: 20px;
+}
+
+.category-selection button {
+  margin: 10px;
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #22035b;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.category-selection button:hover {
+  background-color: #22035b;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.form-container {
+  background-color: #fff;
+  color: #22035b;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.form-container h2 {
+  margin-bottom: 25px;
+  color:black;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  font-size: 16px;
+  color: #aaa;
+  transform: translateY(-50%);
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color:#22035b;
+  background-color: #fff;
+  padding: 0 5px;
+}
+
+.form-container button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #22035b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #22035b;
+}
+
+.form-container button[type="button"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #c5cae9;
+  color: #22035b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button[type="button"]:hover {
+  background-color: #9fa8da;
+}
